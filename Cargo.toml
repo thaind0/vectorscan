@@ -1,0 +1,22 @@
+[package]
+name = "vectorscan"
+version = "0.1.1"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "A Rust wrapper for Vectorscan"
+repository = "https://github.com/thaind0/vectorscan-rs"
+homepage = "https://github.com/thaind0/vectorscan-rs"
+documentation = "https://docs.rs/vectorscan"
+
+build = "build.rs"
+
+[features]
+# The `gen` features causes `bindgen` to run to produce the raw Rust bindings to Vectorscan.
+gen = ["bindgen"]
+
+[build-dependencies]
+bindgen = { version = "0.69", optional = true }
+cmake = "0.1"
+
+[lib]
+doctest = false
