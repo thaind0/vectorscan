@@ -1,5 +1,7 @@
 # `vectorscan-rs`
 
+[![Crates.io](https://img.shields.io/crates/v/vectorscan)](https://crates.io/crates/vectorscan)
+
 ## Overview
 
 This crate implements minimal Rust bindings to the [Vectorscan](https://github.com/Vectorcamp/vectorscan) fork of [Hyperscan](https://github.com/intel/hyperscan), the high-performance regular expression engine.
@@ -21,8 +23,7 @@ The bindings implemented here expose just the parts of Vectorscan that are neede
 The various other APIs such as stream- and vector-based matching are not exposed.
 Other features too, like the Chimera PCRE library, test code, benchmark code, and supporting utilities are disabled.
 
-The source of Vectorscan 5.4.8 is included here in the `vectorscan` directory.
-The source of Boost version 1.83.0 is also included in the `vectorscan/include/boost` directory.
+The source of Vectorscan 5.4.11 is included here in the `vectorscan-sys` directory.
 
 The Vectorscan sources were patched for a few reasons:
 
