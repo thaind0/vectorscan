@@ -69,3 +69,9 @@ cp hs_version.h ../vectorscan-sys/src # from build directory
 ```
 bindgen vectorscan-sys/src/hs.h -o src/bindings.rs # from root directory
 ```
+
+### Test the build
+
+```
+docker build .
+```
